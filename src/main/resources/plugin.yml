@@ -1,0 +1,4 @@
+name: Tpa
+version: '${version}'
+main: com.hanielcota.tpa.TpaPlugin
+api-version: '1.20'
