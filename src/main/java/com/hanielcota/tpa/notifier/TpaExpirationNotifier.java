@@ -34,6 +34,6 @@ public class TpaExpirationNotifier {
 
                 target.sendMessage(String.format("§eSeu pedido de TPA enviado para %s expirou.", senderName));
             }
-        }.runTaskLater(plugin, 20 * 30);
+        }.runTaskLater(plugin, 600);
     }
 }

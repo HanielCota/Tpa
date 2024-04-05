@@ -5,6 +5,7 @@ import co.aikar.commands.annotation.CommandAlias;
 import co.aikar.commands.annotation.CommandCompletion;
 import co.aikar.commands.annotation.Default;
 import com.hanielcota.tpa.TpaPlugin;
+import com.hanielcota.tpa.menu.TpaMenu;
 import lombok.AllArgsConstructor;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
@@ -19,7 +20,8 @@ public class TpaCommand extends BaseCommand {
     @CommandCompletion("@players")
     public void onTpa(Player sender, String[] args) {
         if (args.length < 1) {
-            sender.sendMessage("§cUso correto: /tpa <jogador>");
+
+            new TpaMenu().openCustomMenu(sender, plugin);
             return;
         }
 
